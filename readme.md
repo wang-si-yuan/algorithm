@@ -15,5 +15,7 @@ void sort(Comparable[] a);
 void setVis(int orderedIndexStart, int orderedIndexEnd, int currentCompareIndex, int currentMaximumIndex);
 ```
 Bubble、Insertion、Selection三个接口继承了SortUtil接口，并编写了sort的默认实现方法。
+## 希尔排序模块
+实现了希尔排序。
 ## 排序可视化模块
-可视化模块的核心代码区域调用了简单排序模块，通过钩子`setVis`在排序算法的数据发生改变时设置页面显示的变化，我们可以在`AlgoVisualizer`中36行代码处更改调用`SortUtil`的静态方法来更改排序的方式。
+可视化模块的核心代码区域调用了简单排序模块，通过钩子`setVis`在排序算法的数据发生改变时设置页面显示的变化，我们可以在主函数中更改传入的参数来更改排序的方式。

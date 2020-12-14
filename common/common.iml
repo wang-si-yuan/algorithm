@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="simpleSort" />
-    <orderEntry type="module" module-name="ShellSort" />
+    <orderEntry type="module" module-name="simpleSort" exported="" />
+    <orderEntry type="module" module-name="shellSort" exported="" />
   </component>
 </module>
