@@ -7,6 +7,6 @@ public class Main {
         int sceneHeight = 800;
         int N = 100;
 
-        new SimpleSortAlgoVisualizer(sceneWidth, sceneHeight, N, SimpleSortAlgoVisualizer.SHELL);
+        new SimpleSortAlgoVisualizer(sceneWidth, sceneHeight, N, SimpleSortAlgoVisualizer.MERG);
     }
 }

@@ -1,5 +1,7 @@
 package sort;
 
+import sort.Merg.Merg;
+import sort.Merg.impl.MergImpl;
 import sort.defaultSort.Bubble;
 import sort.defaultSort.Insertion;
 import sort.defaultSort.Selection;
@@ -29,6 +31,11 @@ public interface SortUtil {
     static Shell SHELL = new ShellImpl();
     static Shell SHELL(Shell shell){
         return shell;
+    }
+
+    static Merg MERG = new MergImpl();
+    static Merg MERG(Merg merg) {
+        return merg;
     }
 
     //钩子（为可视化提供的回调方法）

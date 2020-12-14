@@ -15,6 +15,7 @@ public class SimpleSortAlgoVisualizer{
     public final static int INSERTION = 1;
     public final static int SELECTION = 2;
     public final static int SHELL = 3;
+    public final static int MERG = 4;
 
     private final SortData data;
     private AlgoFrame frame;
@@ -47,7 +48,9 @@ public class SimpleSortAlgoVisualizer{
             sortUtil = SortUtil.SELECTION(this::setData);
         }else if (TYPE==SHELL) {
             sortUtil = SortUtil.SHELL(this::setData);
-        } else {
+        }else if (TYPE==MERG) {
+            sortUtil = SortUtil.MERG(this::setData);
+        }else {
             return;
         }
         sortUtil.sort(data.getArray());
