@@ -3,6 +3,7 @@ package controller;
 import model.SortData;
 import sort.SortUtil;
 import view.AlgoFrame;
+import view.SimpleAlgoFrame;
 import view.ViewDataHelper;
 
 import java.awt.*;
@@ -20,7 +21,7 @@ public class AlgoVisualizer {
 
         // 初始化视图
         EventQueue.invokeLater(() -> {
-            frame = new AlgoFrame("Sort Visualization", sceneWidth, sceneHeight);
+            frame = new SimpleAlgoFrame("Sort Visualization", sceneWidth, sceneHeight);
             new Thread(() -> {
                 run();
             }).start();
