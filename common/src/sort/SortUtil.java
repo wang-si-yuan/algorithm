@@ -6,6 +6,8 @@ import sort.defaultSort.Selection;
 import sort.defaultSort.impl.BubbleImpl;
 import sort.defaultSort.impl.InsertionImpl;
 import sort.defaultSort.impl.SelectionImpl;
+import sort.shellSort.Shell;
+import sort.shellSort.impl.ShellImpl;
 
 public interface SortUtil {
 
@@ -22,6 +24,11 @@ public interface SortUtil {
     static Insertion INSERTION = new InsertionImpl();
     static Insertion INSERTION(Insertion insertion){
         return insertion;
+    }
+
+    static Shell SHELL = new ShellImpl();
+    static Shell SHELL(Shell shell){
+        return shell;
     }
 
     //钩子（为可视化提供的回调方法）
