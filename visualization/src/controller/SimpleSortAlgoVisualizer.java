@@ -8,14 +8,14 @@ import view.ViewDataHelper;
 
 import java.awt.*;
 
-public class AlgoVisualizer {
+public class SimpleSortAlgoVisualizer {
 
     private static int DELAY = 50;
 
     private SortData data;
     private AlgoFrame frame;
 
-    public AlgoVisualizer(int sceneWidth, int sceneHeight, int N){
+    public SimpleSortAlgoVisualizer(int sceneWidth, int sceneHeight, int N){
 
         data = new SortData(N, sceneHeight);
 
@@ -47,14 +47,5 @@ public class AlgoVisualizer {
 
         frame.render(data);
         ViewDataHelper.pause(DELAY);
-    }
-
-    public static void main(String[] args) {
-
-        int sceneWidth = 800;
-        int sceneHeight = 800;
-        int N = 100;
-
-        new AlgoVisualizer(sceneWidth, sceneHeight, N);
     }
 }
