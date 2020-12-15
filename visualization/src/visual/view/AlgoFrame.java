@@ -1,6 +1,6 @@
-package view;
+package visual.view;
 
-import model.SortData;
+import visual.model.SortData;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,8 +22,6 @@ public class AlgoFrame extends JFrame {
         pack();
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
-
         setVisible(true);
     }
 
