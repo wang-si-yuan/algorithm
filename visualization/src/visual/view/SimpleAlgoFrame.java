@@ -1,9 +1,10 @@
-package view;
+package visual.view;
 
 import java.awt.*;
 
-public class ShellAlgoFrame extends AlgoFrame {
-    public ShellAlgoFrame(String title, int canvasWidth, int canvasHeight) {
+public final class SimpleAlgoFrame extends AlgoFrame {
+
+    public SimpleAlgoFrame(String title, int canvasWidth, int canvasHeight) {
         super(title, canvasWidth, canvasHeight);
         AlgoCanvas canvas = new AlgoCanvas(){
             @Override
@@ -35,5 +36,7 @@ public class ShellAlgoFrame extends AlgoFrame {
                 }
             }
         };
+        setContentPane(canvas);
+        init();
     }
 }

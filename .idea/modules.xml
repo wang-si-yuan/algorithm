@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonView/commonView.iml" filepath="$PROJECT_DIR$/commonView/commonView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/merging/merging.iml" filepath="$PROJECT_DIR$/merging/merging.iml" />
       <module fileurl="file://$PROJECT_DIR$/shellSort/shellSort.iml" filepath="$PROJECT_DIR$/shellSort/shellSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleSort/simpleSort.iml" filepath="$PROJECT_DIR$/simpleSort/simpleSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/visualization/visualization.iml" filepath="$PROJECT_DIR$/visualization/visualization.iml" />

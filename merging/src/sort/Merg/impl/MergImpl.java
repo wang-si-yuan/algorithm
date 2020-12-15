@@ -1,12 +1,10 @@
-package sort.shellSort.impl;
+package sort.Merg.impl;
 
-import sort.shellSort.Shell;
+import sort.Merg.Merg;
 
-public class ShellImpl implements Shell {
-
+public class MergImpl implements Merg {
     @Override
     public void setVis(int orderedIndexStart, int orderedIndexEnd, int currentCompareIndex, int currentMaximumIndex) {
-
 
     }
 }

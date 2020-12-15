@@ -1,4 +1,4 @@
-package model;
+package visual.model;
 
 public class SortData {
     private Integer[] numbers;
