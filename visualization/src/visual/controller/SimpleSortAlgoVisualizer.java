@@ -18,6 +18,7 @@ public class SimpleSortAlgoVisualizer{
     public final static int SELECTION = 2;
     public final static int SHELL = 3;
     public final static int MERG = 4;
+    public final static int QUICK = 5;
 
     private final SortData data;
     private AlgoFrame frame;
@@ -52,6 +53,8 @@ public class SimpleSortAlgoVisualizer{
             sortUtil = SHELL(this::setData);
         }else if (TYPE==MERG) {
             sortUtil = MERG(this::setData);
+        }else if (TYPE==QUICK) {
+            sortUtil = QUICK(this::setData);
         }else {
             return;
         }

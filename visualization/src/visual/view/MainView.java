@@ -13,7 +13,7 @@ public class MainView extends JFrame {
 
     public MainView(String title) {
         super(title);
-        setSize(1000,1000);
+        setSize(1000,100);
         JPanel panel = new JPanel();
         placeComponents(panel);
         this.add(panel);
@@ -43,6 +43,14 @@ public class MainView extends JFrame {
         JButton merg = new JButton("归并排序");
         panel.add(merg);
         merg.addActionListener(this::mergListener);
+
+        JButton quick = new JButton("快速排序");
+        panel.add(quick);
+        quick.addActionListener(this::quickListener);
+    }
+
+    private void quickListener(ActionEvent actionEvent) {
+        new SimpleSortAlgoVisualizer(sceneWidth,sceneHeight,N,SimpleSortAlgoVisualizer.QUICK);
     }
 
     private void mergListener(ActionEvent actionEvent) {

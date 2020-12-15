@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="merging" exported="" />
     <orderEntry type="module" module-name="shellSort" exported="" />
     <orderEntry type="module" module-name="simpleSort" exported="" />
+    <orderEntry type="module" module-name="quick" exported="" />
   </component>
 </module>

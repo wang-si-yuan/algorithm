@@ -9,6 +9,8 @@ import sort.defaultSort.Selection;
 import sort.defaultSort.impl.BubbleImpl;
 import sort.defaultSort.impl.InsertionImpl;
 import sort.defaultSort.impl.SelectionImpl;
+import sort.quick.Quick;
+import sort.quick.impl.QuickImpl;
 import sort.shellSort.Shell;
 import sort.shellSort.impl.ShellImpl;
 
@@ -36,5 +38,10 @@ public class SortApiUtil {
     static Merg MERG = new MergImpl();
     public static Merg MERG(Merg merg) {
         return merg;
+    }
+
+    static Quick QUICK = new QuickImpl();
+    public static Quick QUICK(Quick quick) {
+        return quick;
     }
 }

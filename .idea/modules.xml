@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonView/commonView.iml" filepath="$PROJECT_DIR$/commonView/commonView.iml" />
       <module fileurl="file://$PROJECT_DIR$/merging/merging.iml" filepath="$PROJECT_DIR$/merging/merging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quick/quick.iml" filepath="$PROJECT_DIR$/quick/quick.iml" />
       <module fileurl="file://$PROJECT_DIR$/shellSort/shellSort.iml" filepath="$PROJECT_DIR$/shellSort/shellSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleSort/simpleSort.iml" filepath="$PROJECT_DIR$/simpleSort/simpleSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/visualization/visualization.iml" filepath="$PROJECT_DIR$/visualization/visualization.iml" />
