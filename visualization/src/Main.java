@@ -1,4 +1,4 @@
-import controller.SimpleSortAlgoVisualizer;
+import visual.controller.SimpleSortAlgoVisualizer;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,5 +8,6 @@ public class Main {
         int N = 100;
 
         new SimpleSortAlgoVisualizer(sceneWidth, sceneHeight, N, SimpleSortAlgoVisualizer.MERG);
+
     }
 }

@@ -1,6 +1,6 @@
-package view;
+package visual.view;
 
-import model.SortData;
+import visual.model.SortData;
 
 import javax.swing.*;
 import java.awt.*;

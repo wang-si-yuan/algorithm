@@ -1,12 +1,14 @@
-package controller;
+package visual.controller;
 
-import model.SortData;
+import visual.model.SortData;
 import sort.SortUtil;
-import view.AlgoFrame;
-import view.SimpleAlgoFrame;
-import view.ViewDataHelper;
+import visual.view.AlgoFrame;
+import visual.view.SimpleAlgoFrame;
+import visual.view.ViewDataHelper;
 
 import java.awt.*;
+
+import static ApiUtils.SortApiUtil.*;
 
 public class SimpleSortAlgoVisualizer{
 
@@ -40,16 +42,16 @@ public class SimpleSortAlgoVisualizer{
         //在这里更改排序算法
         //这里是一个继承排序算法的匿名内部类，实现了三个钩子函数
         SortUtil sortUtil;
-        if (TYPE==BUBBLE){
-            sortUtil = SortUtil.BUBBLE(this::setData);
-        }else if (TYPE==INSERTION){
-            sortUtil = SortUtil.INSERTION(this::setData);
-        }else if (TYPE==SELECTION){
-            sortUtil = SortUtil.SELECTION(this::setData);
+        if (TYPE==BUBBLE) {
+            sortUtil = BUBBLE(this::setData);
+        }else if (TYPE==INSERTION) {
+            sortUtil = INSERTION(this::setData);
+        }else if (TYPE==SELECTION) {
+            sortUtil = SELECTION(this::setData);
         }else if (TYPE==SHELL) {
-            sortUtil = SortUtil.SHELL(this::setData);
+            sortUtil = SHELL(this::setData);
         }else if (TYPE==MERG) {
-            sortUtil = SortUtil.MERG(this::setData);
+            sortUtil = MERG(this::setData);
         }else {
             return;
         }
