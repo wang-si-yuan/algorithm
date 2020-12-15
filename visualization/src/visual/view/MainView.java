@@ -34,7 +34,7 @@ public class MainView extends JFrame {
 
         JButton selection = new JButton("选择排序");
         panel.add(selection);
-        insertion.addActionListener(this::selectionListener);
+        selection.addActionListener(this::selectionListener);
 
         JButton shell = new JButton("希尔排序");
         panel.add(shell);
