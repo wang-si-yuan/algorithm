@@ -47,7 +47,7 @@ public interface Merg extends SortUtil {
             setVis(-1,-1,p2,-1);
         }
 
-        System.arraycopy(temp, 0, a, 0 + lo, temp.length);
+        System.arraycopy(temp, 0, a, lo, temp.length);
         setVis(lo,hi,-1,-1);
     }
 }
