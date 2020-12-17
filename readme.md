@@ -2,6 +2,8 @@
 * 工具和版本：idea，jdk8
 * 公众号：学长会编程
 ![Image](https://github.com/wang-si-yuan/algorithm/blob/master/images/gzh.png)
+
+[排序算法的实现教学](https://github.com/wang-si-yuan/algorithm/blob/master/sort.md)
 ## 简单排序模块
 简单排序算法所在的module是simpleSort，里面提供了三种算法,分别是冒泡排序(Bubble)、查找排序(Selection)和插入排序(Insertion)。
 与公众号推送的排序算法不同的是，我为排序算法做了一层良好的封装，提高了代码的可读性和可复用性。
