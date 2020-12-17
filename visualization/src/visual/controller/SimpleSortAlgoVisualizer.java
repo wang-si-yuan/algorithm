@@ -12,7 +12,7 @@ import static ApiUtils.SortApiUtil.*;
 
 public class SimpleSortAlgoVisualizer{
 
-    public static int DELAY = 30;
+    public static int DELAY = 10;
     public final static int BUBBLE = 0;
     public final static int INSERTION = 1;
     public final static int SELECTION = 2;
