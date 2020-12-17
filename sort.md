@@ -8,8 +8,8 @@
 > This interface imposes a total ordering on the objects of each class that implements it. This ordering is referred to as the class’s natural ordering, and the class’s compareTo method is referred to as its natural comparison method.
 我们可以知道，这个接口可以实现给类增加一个**排序规则**。java内置的很多api都实现类Comparable接口，同时也内置了很多对Comparable类的操作。**Comparable接口中定义了一个名为compareTo、参数为泛型且返回值为int型的抽象方法**。使用方式为：调用一个Comparable对象的compareTo方法，传入指定对象，获取一个返回值，返回值为负整数、零或正整数，此对象小于、等于或大于指定对象。
 我们可以将返回值理解为**此对象与指定对象的距离**，如下图所示。
->
-![image](images/sort/comparable.gif)
+
+![image](https://github.com/wang-si-yuan/algorithm/blob/master/images/sort/comparable.gif)
 
 因此，我们可以直接封装一个处理Comparable对象的排序类，以此来完成排序工作。
 ### 1.2 冒泡排序原理
@@ -18,7 +18,9 @@
 2. 按照顺序对排序列进行一次遍历，并进行交换，交换规则为：将顺序遍历的元素分别与指针p做比较，如果其值比指针p更小，则交换p对应元素与该元素的位置，并且使p永远指向更大的元素。
 3. 忽略每次遍历后的结尾元素重复遍历，最终得到有序列。
 下图显示了冒泡排序第一次遍历得到的结果。
-[image:06780E59-1B4A-4E84-A772-25E43CA0AEEB-2190-000007104D13119B/f2de9014b5a5c8ca0f3b19f069df298a-sz_719981.gif]
+
+![image](https://github.com/wang-si-yuan/algorithm/blob/master/images/sort/bubble.gif)
+
 我们发现，每一次都是在比较和交换相邻的元素，所以此时指针是多余的，我们可以每次遍历只比较相邻元素大小即可。
 最后我们得到了冒泡排序的定义：
 冒泡排序算法重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。
@@ -90,7 +92,9 @@ public class Bubble {
 通过算法的分析，我们发现，冒泡排序在排序的过程中做了大量无用的交换，这导致了性能的折损，我们能不能有 一种简单的方式来避免这种无用的交换呢？
 **选择排序**解决了这个问题。
 选择排序是一种更加直观的排序解决方案，它的原理就是**将元素放到应该放到的位置**。
-[image:1B3D01B1-82CB-4519-9F2B-A657FD02DBE3-2190-000007104CC118A8/7664e2806c6dc0cb527ea4f5a31a9d72-sz_296900.png]
+
+![image](https://github.com/wang-si-yuan/algorithm/blob/master/images/sort/insertion.gif)
+
 它在每一次遍历时，都让一个指针指向最小值，在遍历结束后将最小值交换到无序列的前面。
 **在遍历期间，元素不再进行交换。**
 下图显示了选择排序第一趟的排序过程。
@@ -171,11 +175,15 @@ public class Selection {
 ## 3 插入排序
 ### 3.1 插入排序原理
 大家都应该玩过扑克牌。
-[image:26057F4F-E553-4E9B-B9E4-0159FAEF5FAC-2190-000007104C4627D8/4f0a3d322c5eebc9da820efd622ac69f-sz_31495.jpg]
+
+![image](https://github.com/wang-si-yuan/algorithm/blob/master/images/sort/selectionb.gif)
+
 插入排序就是“抓牌”。
 我们将所有元素分为两组，一组是未排序的（排堆），另一组是排好序的（手里），初始状态下，手里没有牌，我们将在乱序的元素中抽取元素，之后插入到手上合适的位置。
 下图是插入排序的过程。
-[image:9C010B56-DCD3-4A8C-ABDD-621810584489-2190-000007104C1EEA9D/fd8a2ff6fd3897579ec1d55d4e08ee68-sz_1045271.gif]
+
+![image](https://github.com/wang-si-yuan/algorithm/blob/master/images/sort/selection.gif)
+
 **案例**
 **3,6,2,7,1,5,4**
 第一趟排序
