@@ -8,8 +8,9 @@
 > This interface imposes a total ordering on the objects of each class that implements it. This ordering is referred to as the class’s natural ordering, and the class’s compareTo method is referred to as its natural comparison method.
 我们可以知道，这个接口可以实现给类增加一个**排序规则**。java内置的很多api都实现类Comparable接口，同时也内置了很多对Comparable类的操作。**Comparable接口中定义了一个名为compareTo、参数为泛型且返回值为int型的抽象方法**。使用方式为：调用一个Comparable对象的compareTo方法，传入指定对象，获取一个返回值，返回值为负整数、零或正整数，此对象小于、等于或大于指定对象。
 我们可以将返回值理解为**此对象与指定对象的距离**，如下图所示。
+>
+![image](images/sort/comparable.gif)
 
-[image:142F22E6-0F68-415A-BC1D-A53B1E07095E-2190-000007104D4D7424/0536bba66b13bd9395ccbcec4275bde8-sz_350449.gif]
 因此，我们可以直接封装一个处理Comparable对象的排序类，以此来完成排序工作。
 ### 1.2 冒泡排序原理
 想要理解冒泡排序为什么可以排序，我们可以借助一个指针来查看最大元素的移动轨迹。
